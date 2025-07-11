@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fancy Car Wash</title>
+    <meta name="description" content="Learn about Fancy Car Wash's commitment to quality, community, and providing an eco-friendly, state-of-the-art car wash experience in Milwaukee.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* --- Custom Theme Colors (Consistent with other pages) --- */
+        :root {
+            --fcw-blue-dark: #1e3a8a;
+            --fcw-blue-light: #3b82f6;
+            --fcw-yellow: #f59e0b;
+            --fcw-gray: #f3f4f6;
+        }
+        .bg-fcw-blue-light { background-color: var(--fcw-blue-light); }
+        .bg-fcw-blue-dark { background-color: var(--fcw-blue-dark); }
+        .text-fcw-blue-dark { color: var(--fcw-blue-dark); }
+        .text-fcw-yellow { color: var(--fcw-yellow); }
+        .border-fcw-blue-light { border-color: var(--fcw-blue-light); }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header (Identical to other pages, but with "About Us" marked as active) -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <!-- Replace with your logo file -->
+                <img src="https://placehold.co/200x80/ffffff/1e3a8a?text=FancyCarWash+Logo" alt="Fancy Car Wash Logo" class="h-16 w-auto">
+            </a>
+            <div class="hidden md:flex space-x-8 items-center font-semibold">
+                <a href="index.html" class="text-gray-600 hover:text-fcw-blue-light">Home</a>
+                <a href="memberships.html" class="text-gray-600 hover:text-fcw-blue-light">Memberships</a>
+                <a href="services.html" class="text-gray-600 hover:text-fcw-blue-light">Services</a>
+                <a href="about.html" class="text-fcw-blue-dark hover:text-fcw-blue-light">About Us</a>
+                <a href="contact.html" class="text-gray-600 hover:text-fcw-blue-light">Contact</a>
+                <a href="memberships.html" class="bg-fcw-blue-light text-white px-5 py-2 rounded-full hover:bg-fcw-blue-dark cta-button">Join The Club</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-fcw-blue-light focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-fcw-blue-light">Home</a>
+            <a href="memberships.html" class="block py-2 text-gray-600 hover:text-fcw-blue-light">Memberships</a>
+            <a href="services.html" class="block py-2 text-gray-600 hover:text-fcw-blue-light">Services</a>
+            <a href="about.html" class="block py-2 text-fcw-blue-dark hover:text-fcw-blue-light">About Us</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-fcw-blue-light">Contact</a>
+            <a href="memberships.html" class="block mt-2 bg-fcw-blue-light text-white px-4 py-2 rounded-full text-center hover:bg-fcw-blue-dark cta-button">Join The Club</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header Section -->
+        <section class="bg-fcw-blue-dark text-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-black tracking-tight">More Than a Car Wash</h1>
+                <p class="text-lg md:text-xl mt-4 max-w-3xl mx-auto">We're a locally-owned business dedicated to providing a fast, friendly, and high-quality wash experience.</p>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-fcw-blue-dark mb-4">Our Story</h2>
+                        <p class="text-gray-600 mb-4 text-lg">
+                            Fancy Car Wash was founded with a simple mission: to make it easy and affordable for the people of Milwaukee to drive a clean car every day. We saw a need for a modern, efficient car wash that didn't compromise on quality or customer service.
+                        </p>
+                        <p class="text-gray-600 text-lg">
+                            We invested in the latest technology, from our license plate recognition system to our gentle, closed-cell foam brushes and eco-friendly cleaning products. We're proud to be a part of the community and are committed to delivering a "fancy" clean, every time.
+                        </p>
+                    </div>
+                    <div>
+                        <!-- Replace with a photo of your car wash facility -->
+                        <img src="https://placehold.co/600x450/3b82f6/ffffff?text=Our+Modern+Facility" alt="Fancy Car Wash facility exterior" class="rounded-lg shadow-xl w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Commitment Section -->
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-fcw-blue-dark">Our Commitment</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Quality -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <svg class="w-12 h-12 mx-auto mb-4 text-fcw-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="text-xl font-bold mb-2">Unmatched Quality</h3>
+                        <p class="text-gray-600">We use the best equipment and products to ensure your car gets a superior clean that's also safe for its finish.</p>
+                    </div>
+                    <!-- Environment -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <svg class="w-12 h-12 mx-auto mb-4 text-fcw-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="text-xl font-bold mb-2">Customer Service</h3>
+                        <p class="text-gray-600">Our friendly team is always here to help. We want every visit to be a great experience from start to finish.</p>
+                    </div>
+                    <!-- Community -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <svg class="w-12 h-12 mx-auto mb-4 text-fcw-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <h3 class="text-xl font-bold mb-2">Local & Proud</h3>
+                        <p class="text-gray-600">We're proud to be a Milwaukee-based business. We're your neighbors, and we're invested in our community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Identical to other pages) -->
+    <footer id="contact" class="bg-fcw-blue-dark text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-xl font-bold mb-4">FANCY CAR WASH</h3>
+                    <p class="text-gray-300">Milwaukee's premier tunnel car wash. We're committed to quality, speed, and environmental sustainability.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul>
+                        <li class="mb-2"><a href="memberships.html" class="text-gray-300 hover:text-white">Memberships</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-gray-300 hover:text-white">Our Services</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-gray-300 hover:text-white">Contact & Location</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Find Us</h3>
+                    <p class="text-gray-300 mb-2">7323 W Mill Rd, Milwaukee, WI 53218</p>
+                    <p class="text-gray-300 mb-2">Phone: (414) 123-4567</p>
+                    <p class="text-gray-300">Email: contact@fancycarwash.com</p>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Fancy Car Wash. All Rights Reserved. Website by You & Gemini.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
